@@ -1,10 +1,11 @@
 %define	major 1
-%define libname	%mklibname oggz %{major}
+%define libname %mklibname oggz %{major}
+%define develname %mklibname oggz -d
 
 Summary:	Simple programming interface for Ogg files and streams
 Name:		liboggz
 Version:	0.9.5
-Release:	%mkrel 1
+Release:	%mkrel 2
 Group:		System/Libraries
 License:	BSD
 URL:		http://www.annodex.net/
@@ -30,13 +31,14 @@ Oggz provides a simple programming interface for reading and writing Ogg files
 and streams. Ogg is an interleaving data container developed by Monty at
 Xiph.Org, originally to support the Ogg Vorbis audio format.
 
-%package -n	%{libname}-devel
+%package -n	%{develname}
 Summary:	Files needed for development using liboggz
 Group:		Development/C
-Provides:	%{name}-devel = %{version}
+Provides:	%{name}-devel = %{version}-%{release}
 Requires:	%{libname} = %{version}
+Obsoletes:	%{mklibname oggz 1 -d}
 
-%description -n	%{libname}-devel
+%description -n	%{develname}
 Oggz provides a simple programming interface for reading and writing Ogg files
 and streams. Ogg is an interleaving data container developed by Monty at
 Xiph.Org, originally to support the Ogg Vorbis audio format.
@@ -47,7 +49,6 @@ using liboggz.
 %package	tools 
 Summary:	Various tools using the liboggz library
 Group:		Development/C
-Provides:	%{name}-devel = %{version}
 Requires:	%{libname} = %{version}
 
 %description	tools
@@ -86,7 +87,7 @@ rm -rf %{buildroot}%{_docdir}/liboggz
 %doc AUTHORS COPYING ChangeLog README
 %{_libdir}/*.so.*
 
-%files -n %{libname}-devel
+%files -n %{develname}
 %defattr(-,root,root)
 %doc doc/liboggz/html/*
 %dir %{_includedir}/oggz
@@ -100,5 +101,3 @@ rm -rf %{buildroot}%{_docdir}/liboggz
 %defattr(-,root,root)
 %{_bindir}/oggz*
 %{_mandir}/man1/*
-
-
