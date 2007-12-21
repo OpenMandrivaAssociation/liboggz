@@ -15,6 +15,7 @@ BuildRequires:	doxygen
 BuildRequires:	docbook-utils
 BuildRequires:	autoconf2.5
 BuildRequires:	libtool
+BuildRoot:	%{_tmppath}/%{name}-%{version}-root
 
 %description
 Oggz provides a simple programming interface for reading and writing Ogg files
