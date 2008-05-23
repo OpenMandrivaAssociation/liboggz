@@ -4,12 +4,12 @@
 
 Summary:	Simple programming interface for Ogg files and streams
 Name:		liboggz
-Version:	0.9.5
-Release:	%mkrel 2
+Version:	0.9.7
+Release:	%mkrel 1
 Group:		System/Libraries
-License:	BSD
+License:	BSD-like
 URL:		http://www.annodex.net/
-Source0:	http://www.annodex.net/software/liboggz/download/%{name}-%{version}.tar.bz2
+Source0:	http://www.annodex.net/software/liboggz/download/%{name}-%{version}.tar.gz
 BuildRequires:	libogg-devel >= 1.0
 BuildRequires:	doxygen
 BuildRequires:	docbook-utils
