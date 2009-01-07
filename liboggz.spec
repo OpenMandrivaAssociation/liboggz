@@ -4,17 +4,16 @@
 
 Summary:	Simple programming interface for Ogg files and streams
 Name:		liboggz
-Version:	0.9.7
-Release:	%mkrel 2
+Version:	0.9.8
+Release:	%mkrel 1
 Group:		System/Libraries
 License:	BSD-like
 URL:		http://www.annodex.net/
 Source0:	http://www.annodex.net/software/liboggz/download/%{name}-%{version}.tar.gz
 BuildRequires:	libogg-devel >= 1.0
-BuildRequires:	doxygen
+#disabling doxygen because of obsolete instructions
+#BuildRequires:	doxygen
 BuildRequires:	docbook-utils
-BuildRequires:	autoconf2.5
-BuildRequires:	libtool
 BuildRoot:	%{_tmppath}/%{name}-%{version}-root
 
 %description
@@ -65,7 +64,7 @@ This package contains various tools using the liboggz library.
 %make
 
 %check
-make check
+%make check
 
 %install
 [ "%{buildroot}" != "/" ] && rm -rf %{buildroot}
@@ -89,7 +88,7 @@ rm -rf %{buildroot}%{_docdir}/liboggz
 %files -n %{libname}
 %defattr(-,root,root)
 %doc AUTHORS COPYING ChangeLog README
-%{_libdir}/*.so.*
+%{_libdir}/*.so.%{major}*
 
 %files -n %{develname}
 %defattr(-,root,root)
