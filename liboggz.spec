@@ -4,8 +4,8 @@
 
 Summary:	Simple programming interface for Ogg files and streams
 Name:		liboggz
-Version:	0.9.8
-Release:	%mkrel 2
+Version:	1.0.0
+Release:	%mkrel 1
 Group:		System/Libraries
 License:	BSD-like
 URL:		http://www.annodex.net/
