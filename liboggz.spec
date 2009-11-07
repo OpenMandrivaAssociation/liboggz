@@ -1,10 +1,10 @@
-%define	major 1
+%define	major 2
 %define libname %mklibname oggz %{major}
 %define develname %mklibname oggz -d
 
 Summary:	Simple programming interface for Ogg files and streams
 Name:		liboggz
-Version:	1.0.0
+Version:	1.1.0
 Release:	%mkrel 1
 Group:		System/Libraries
 License:	BSD-like
