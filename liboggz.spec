@@ -4,12 +4,12 @@
 
 Summary:	Simple programming interface for Ogg files and streams
 Name:		liboggz
-Version:	1.1.0
+Version:	1.1.1
 Release:	%mkrel 1
 Group:		System/Libraries
 License:	BSD-like
-URL:		http://www.annodex.net/
-Source0:	http://www.annodex.net/software/liboggz/download/%{name}-%{version}.tar.gz
+URL:		http://www.xiph.org/oggz/
+Source0:	http://downloads.xiph.org/releases/liboggz/%{name}-%{version}.tar.gz
 BuildRequires:	libogg-devel >= 1.0
 #disabling doxygen because of obsolete instructions
 #BuildRequires:	doxygen
