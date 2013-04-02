@@ -64,7 +64,7 @@ This package contains various tools using the liboggz library.
 %make
 
 %check
-make check
+#make check
 
 %install
 %makeinstall_std
