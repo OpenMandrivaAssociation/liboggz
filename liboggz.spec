@@ -1,11 +1,11 @@
-%define	major	2
-%define libname	%mklibname oggz %{major}
-%define devname	%mklibname oggz -d
+%define major 2
+%define libname %mklibname oggz %{major}
+%define devname %mklibname oggz -d
 
 Summary:	Simple programming interface for Ogg files and streams
 Name:		liboggz
 Version:	1.1.1
-Release:	2
+Release:	3
 Group:		System/Libraries
 License:	BSD-like
 Url:		http://www.xiph.org/oggz/
