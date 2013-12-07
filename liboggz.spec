@@ -5,7 +5,7 @@
 Summary:	Simple programming interface for Ogg files and streams
 Name:		liboggz
 Version:	1.1.1
-Release:	6
+Release:	7
 Group:		System/Libraries
 License:	BSD-like
 Url:		http://www.xiph.org/oggz/
