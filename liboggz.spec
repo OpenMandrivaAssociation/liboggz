@@ -8,7 +8,7 @@ Version:	1.1.1
 Release:	14
 Group:		System/Libraries
 License:	BSD-like
-Url:		http://www.xiph.org/oggz/
+Url:		https://www.xiph.org/oggz/
 Source0:	http://downloads.xiph.org/releases/liboggz/%{name}-%{version}.tar.gz
 BuildRequires:	docbook-utils
 BuildRequires:	pkgconfig(ogg)
